@@ -1,0 +1,493 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Task",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "claude-notify tool Task"
+          }
+        ]
+      },
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "claude-notify tool Bash"
+          }
+        ]
+      },
+      {
+        "matcher": "Glob",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "claude-notify tool Glob"
+          }
+        ]
+      },
+      {
+        "matcher": "Grep",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "claude-notify tool Grep"
+          }
+        ]
+      },
+      {
+        "matcher": "LS",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "claude-notify tool LS"
+          }
+        ]
+      },
+      {
+        "matcher": "Read",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "claude-notify tool Read"
+          }
+        ]
+      },
+      {
+        "matcher": "Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "claude-notify tool Edit"
+          }
+        ]
+      },
+      {
+        "matcher": "MultiEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "claude-notify tool MultiEdit"
+          }
+        ]
+      },
+      {
+        "matcher": "Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "claude-notify tool Write"
+          }
+        ]
+      },
+      {
+        "matcher": "NotebookRead",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "claude-notify tool NotebookRead"
+          }
+        ]
+      },
+      {
+        "matcher": "NotebookEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "claude-notify tool NotebookEdit"
+          }
+        ]
+      },
+      {
+        "matcher": "WebFetch",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "claude-notify tool WebFetch"
+          }
+        ]
+      },
+      {
+        "matcher": "WebSearch",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "claude-notify tool WebSearch"
+          }
+        ]
+      },
+      {
+        "matcher": "TodoRead",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "claude-notify tool TodoRead"
+          }
+        ]
+      },
+      {
+        "matcher": "TodoWrite",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "claude-notify tool TodoWrite"
+          }
+        ]
+      },
+      {
+        "matcher": "exit_plan_mode",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "claude-notify tool exit_plan_mode"
+          }
+        ]
+      },
+      {
+        "matcher": "mcp__todoist__listTasks",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "claude-notify tool mcp__todoist__listTasks"
+          }
+        ]
+      },
+      {
+        "matcher": "mcp__todoist__getTask",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "claude-notify tool mcp__todoist__getTask"
+          }
+        ]
+      },
+      {
+        "matcher": "mcp__todoist__createTask",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "claude-notify tool mcp__todoist__createTask"
+          }
+        ]
+      },
+      {
+        "matcher": "mcp__todoist__updateTask",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "claude-notify tool mcp__todoist__updateTask"
+          }
+        ]
+      },
+      {
+        "matcher": "mcp__todoist__completeTask",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "claude-notify tool mcp__todoist__completeTask"
+          }
+        ]
+      },
+      {
+        "matcher": "mcp__todoist__reopenTask",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "claude-notify tool mcp__todoist__reopenTask"
+          }
+        ]
+      },
+      {
+        "matcher": "mcp__todoist__deleteTask",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "claude-notify tool mcp__todoist__deleteTask"
+          }
+        ]
+      },
+      {
+        "matcher": "mcp__todoist__listProjects",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "claude-notify tool mcp__todoist__listProjects"
+          }
+        ]
+      },
+      {
+        "matcher": "mcp__todoist__getProject",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "claude-notify tool mcp__todoist__getProject"
+          }
+        ]
+      },
+      {
+        "matcher": "mcp__todoist__createProject",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "claude-notify tool mcp__todoist__createProject"
+          }
+        ]
+      },
+      {
+        "matcher": "mcp__todoist__updateProject",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "claude-notify tool mcp__todoist__updateProject"
+          }
+        ]
+      },
+      {
+        "matcher": "mcp__todoist__archiveProject",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "claude-notify tool mcp__todoist__archiveProject"
+          }
+        ]
+      },
+      {
+        "matcher": "mcp__todoist__unarchiveProject",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "claude-notify tool mcp__todoist__unarchiveProject"
+          }
+        ]
+      },
+      {
+        "matcher": "mcp__todoist__deleteProject",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "claude-notify tool mcp__todoist__deleteProject"
+          }
+        ]
+      },
+      {
+        "matcher": "mcp__todoist__getProjectCollaborators",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "claude-notify tool mcp__todoist__getProjectCollaborators"
+          }
+        ]
+      },
+      {
+        "matcher": "mcp__todoist__listSections",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "claude-notify tool mcp__todoist__listSections"
+          }
+        ]
+      },
+      {
+        "matcher": "mcp__todoist__getSection",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "claude-notify tool mcp__todoist__getSection"
+          }
+        ]
+      },
+      {
+        "matcher": "mcp__todoist__createSection",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "claude-notify tool mcp__todoist__createSection"
+          }
+        ]
+      },
+      {
+        "matcher": "mcp__todoist__updateSection",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "claude-notify tool mcp__todoist__updateSection"
+          }
+        ]
+      },
+      {
+        "matcher": "mcp__todoist__deleteSection",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "claude-notify tool mcp__todoist__deleteSection"
+          }
+        ]
+      },
+      {
+        "matcher": "mcp__todoist__listComments",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "claude-notify tool mcp__todoist__listComments"
+          }
+        ]
+      },
+      {
+        "matcher": "mcp__todoist__getComment",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "claude-notify tool mcp__todoist__getComment"
+          }
+        ]
+      },
+      {
+        "matcher": "mcp__todoist__createComment",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "claude-notify tool mcp__todoist__createComment"
+          }
+        ]
+      },
+      {
+        "matcher": "mcp__todoist__updateComment",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "claude-notify tool mcp__todoist__updateComment"
+          }
+        ]
+      },
+      {
+        "matcher": "mcp__todoist__deleteComment",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "claude-notify tool mcp__todoist__deleteComment"
+          }
+        ]
+      },
+      {
+        "matcher": "mcp__todoist__listLabels",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "claude-notify tool mcp__todoist__listLabels"
+          }
+        ]
+      },
+      {
+        "matcher": "mcp__todoist__getLabel",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "claude-notify tool mcp__todoist__getLabel"
+          }
+        ]
+      },
+      {
+        "matcher": "mcp__todoist__createLabel",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "claude-notify tool mcp__todoist__createLabel"
+          }
+        ]
+      },
+      {
+        "matcher": "mcp__todoist__updateLabel",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "claude-notify tool mcp__todoist__updateLabel"
+          }
+        ]
+      },
+      {
+        "matcher": "mcp__todoist__deleteLabel",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "claude-notify tool mcp__todoist__deleteLabel"
+          }
+        ]
+      },
+      {
+        "matcher": "mcp__todoist__getSharedLabels",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "claude-notify tool mcp__todoist__getSharedLabels"
+          }
+        ]
+      },
+      {
+        "matcher": "mcp__todoist__renameSharedLabel",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "claude-notify tool mcp__todoist__renameSharedLabel"
+          }
+        ]
+      },
+      {
+        "matcher": "mcp__todoist__removeSharedLabel",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "claude-notify tool mcp__todoist__removeSharedLabel"
+          }
+        ]
+      },
+      {
+        "matcher": "Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo \"hello\" > /home/yuu/hello.txt"
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "if [[ \"$CLAUDE_TOOL_ARGS\" == *\"package.json\"* ]]; then cd /home/yuu/upsell-aiop-twilio-webserver && pnpm install --lockfile-only; fi"
+          }
+        ]
+      }
+    ],
+    "Notification": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python /home/yuu/claude-hooks/win-notify.py"
+          },
+          {
+            "type": "command",
+            "command": "claude-notify notification"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "claude-notify stop"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "claude-hooks",
+  "version": "1.0.0",
+  "description": "Claude hooks notification system",
+  "main": "notification.js",
+  "type": "module",
+  "bin": {
+    "claude-notify": "./dist/notification.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node notification.js",
+    "dev": "tsx notification.ts"
+  },
+  "keywords": ["claude", "hooks", "notification"],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.0.0"
+  }
+}

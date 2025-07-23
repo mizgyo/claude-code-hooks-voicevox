@@ -1,24 +1,41 @@
 # claude-code-hooks-voicevox
 
-claude code hooks ずんだもんを設定
-wsl のみ対応
+Voice notifications for Claude Code using VOICEVOX.
 
-## how to use
+## Prerequisites
+
+- WSL environment
+- Docker
+- Node.js
+
+## Installation
 
 ```bash
-# install command
-git clone git@github.com:mizgyo/claude-code-hooks-voicevox.git
+git clone https://github.com/mizgyo/claude-code-hooks-voicevox.git
 cd claude-code-hooks-voicevox
 npm install
 npm run build
 npm install -g .
+```
 
-# execute installed command
-zunda-hooks stop
+## Setup
 
-# prepare voicevox server
+Start VOICEVOX server:
+
+```bash
 docker run -d -p '127.0.0.1:50021:50021' voicevox/voicevox_engine:cpu-latest
+```
 
-# copy hooks to your favorite settings file (below is a sample command)
-cat hooks-example.json | jq #あとなんとかして .claude/settings.local.jsonのhooksのところに追記する
+Copy hooks to your settings file:
+
+```bash
+[ -f .claude/settings.local.json ] && jq -s '.[0] * .[1]' .claude/settings.local.json hooks-example.json > temp.json && mv temp.json .claude/settings.local.json || cp hooks-example.json .claude/settings.local.json
+```
+
+## Usage
+
+Test the installation:
+
+```bash
+zunda-hooks stop
 ```

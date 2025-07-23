@@ -1,18 +1,22 @@
 {
-  "name": "claude-hooks",
+  "name": "zunda-hooks",
   "version": "1.0.0",
   "description": "Claude hooks notification system",
   "main": "notification.js",
   "type": "module",
   "bin": {
-    "claude-notify": "./dist/notification.js"
+    "zunda-hooks": "./dist/index.js"
   },
   "scripts": {
     "build": "tsc",
-    "start": "node notification.js",
-    "dev": "tsx notification.ts"
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts"
   },
-  "keywords": ["claude", "hooks", "notification"],
+  "keywords": [
+    "claude",
+    "hooks",
+    "notification"
+  ],
   "author": "",
   "license": "ISC",
   "devDependencies": {

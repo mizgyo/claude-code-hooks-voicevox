@@ -1,0 +1,173 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Task",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "zunda-hooks tool Task"
+          }
+        ]
+      },
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "zunda-hooks tool Bash"
+          }
+        ]
+      },
+      {
+        "matcher": "Glob",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "zunda-hooks tool Glob"
+          }
+        ]
+      },
+      {
+        "matcher": "Grep",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "zunda-hooks tool Grep"
+          }
+        ]
+      },
+      {
+        "matcher": "LS",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "zunda-hooks tool LS"
+          }
+        ]
+      },
+      {
+        "matcher": "Read",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "zunda-hooks tool Read"
+          }
+        ]
+      },
+      {
+        "matcher": "Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "zunda-hooks tool Edit"
+          }
+        ]
+      },
+      {
+        "matcher": "MultiEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "zunda-hooks tool MultiEdit"
+          }
+        ]
+      },
+      {
+        "matcher": "Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "zunda-hooks tool Write"
+          }
+        ]
+      },
+      {
+        "matcher": "NotebookRead",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "zunda-hooks tool NotebookRead"
+          }
+        ]
+      },
+      {
+        "matcher": "NotebookEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "zunda-hooks tool NotebookEdit"
+          }
+        ]
+      },
+      {
+        "matcher": "WebFetch",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "zunda-hooks tool WebFetch"
+          }
+        ]
+      },
+      {
+        "matcher": "WebSearch",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "zunda-hooks tool WebSearch"
+          }
+        ]
+      },
+      {
+        "matcher": "TodoRead",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "zunda-hooks tool TodoRead"
+          }
+        ]
+      },
+      {
+        "matcher": "TodoWrite",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "zunda-hooks tool TodoWrite"
+          }
+        ]
+      },
+      {
+        "matcher": "exit_plan_mode",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "zunda-hooks tool exit_plan_mode"
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [],
+    "Notification": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "zunda-hooks notification"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "zunda-hooks stop"
+          }
+        ]
+      }
+    ]
+  }
+}

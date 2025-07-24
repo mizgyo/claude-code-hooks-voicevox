@@ -38,6 +38,11 @@ export interface NotificationConfig {
   quietVolume: number;
   speedScale: number;
   tempDir: string;
+  messages?: {
+    tools?: ToolMessage;
+    notification?: string[];
+    stop?: string[];
+  };
 }
 
 export type NotificationMode = 'tool' | 'notification' | 'stop';

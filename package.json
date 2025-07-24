@@ -1,6 +1,6 @@
 {
   "name": "zunda-hooks",
-  "version": "1.0.0",
+  "version": "0.0.2",
   "description": "Claude hooks notification system",
   "main": "notification.js",
   "type": "module",
@@ -25,6 +25,7 @@
     "typescript": "^5.0.0"
   },
   "dependencies": {
-    "commander": "^14.0.0"
+    "commander": "^14.0.0",
+    "jsonc-parser": "^3.3.1"
   }
 }

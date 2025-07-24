@@ -3,6 +3,7 @@
 import { Command } from 'commander';
 import { NotificationHandler } from './handlers/notification.js';
 import { ToolName } from './types/index.js';
+import { loadConfig } from './config/loader.js';
 
 async function main(): Promise<void> {
   const program = new Command();
@@ -10,15 +11,17 @@ async function main(): Promise<void> {
   program
     .name('zunda-hooks')
     .description('Claude hooks notification system')
-    .version('1.0.0');
+    .version('0.0.2')
+    .option('-c, --config <path>', 'Path to config JSON file');
 
   program
     .command('tool')
     .description('Play tool notification')
     .argument('<tool_name>', 'Name of the tool')
-    .action(async (toolName: ToolName) => {
+    .action(async (toolName: ToolName, options, command) => {
       console.log(`Running in tool mode...`);
-      const handler = new NotificationHandler();
+      const config = await loadConfig(command.parent?.opts().config);
+      const handler = new NotificationHandler(undefined, config);
       try {
         await handler.playToolNotification(toolName);
       } catch (error) {
@@ -30,9 +33,10 @@ async function main(): Promise<void> {
   program
     .command('notification')
     .description('Play general notification')
-    .action(async () => {
+    .action(async (options, command) => {
       console.log(`Running in notification mode...`);
-      const handler = new NotificationHandler();
+      const config = await loadConfig(command.parent?.opts().config);
+      const handler = new NotificationHandler(undefined, config);
       try {
         await handler.playNotification();
       } catch (error) {
@@ -44,9 +48,10 @@ async function main(): Promise<void> {
   program
     .command('stop')
     .description('Play stop notification')
-    .action(async () => {
+    .action(async (options, command) => {
       console.log(`Running in stop mode...`);
-      const handler = new NotificationHandler();
+      const config = await loadConfig(command.parent?.opts().config);
+      const handler = new NotificationHandler(undefined, config);
       try {
         await handler.playStopNotification();
       } catch (error) {

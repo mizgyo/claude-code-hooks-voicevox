@@ -46,6 +46,11 @@ export const DEFAULT_CONFIG: NotificationConfig = {
   quietVolume: 0.7,
   speedScale: 1.5,
   tempDir: '/tmp/voicevox',
+  messages: {
+    tools: TOOL_MESSAGES,
+    notification: NOTIFICATION_MESSAGES,
+    stop: STOP_MESSAGES,
+  },
 };
 
 export const RARE_NOTIFICATION_PROBABILITY = 0.1;
